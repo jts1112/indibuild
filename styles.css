@@ -1,0 +1,148 @@
+:root {
+    font-size: 1em;
+
+    /*Defined fonts*/ 
+     --font-mainheader: verdana;
+     --font-header:verdana;
+     --font-content:verdana;
+   
+
+    /* Defined Colors */
+
+    --background-dark-blue :#004466;
+    --content-text: #333;
+    --color-white: #ffffff;
+
+    --header-text: var(--color-white);
+
+    --header-background: var(--background-dark-blue);
+    --body-background: #f9f9f9;
+    --footer-background: var(--background-dark-blue);
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/*Debug classv*/
+.debug-border {
+    border: 3px solid red;
+}
+
+
+/* General Styles <html-elements> */ 
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--body-background);
+    color: var(--content-text);
+    font-style: var(--font-content);
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--header-background);
+    color: var(--header-text);
+    font-style: var(--font-mainheader);
+    position: sticky;
+    top: 0;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    height: 60px;
+    margin-right: 1rem;
+  }
+  
+  .company-name {
+    font-size: 1.5rem;
+    margin-right: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  .banner {
+    background-image: url('Salt_Lake_City_skyline_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    width: 100%;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .banner-content {
+    background-color: #00446699; 
+    padding: 2rem;
+    border: 2px solid #004466cc;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+  
+  .banner-content p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .cta-btn {
+    background-color: #ffffff;
+    color: #004466;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Main Content */
+  main .content {
+    max-width: 60%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px #0000001a;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+  }
