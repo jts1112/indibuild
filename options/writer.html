@@ -15,15 +15,19 @@
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
     <title>Writer Portfolio</title>
+
+     
 </head>
 
 <body>
 
-    <header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
         <div class="header-inner">
-            <img src="../assets/images/indibuild-logo.png" alt="Logo" class="logo" />
+            <img src="../assets/images/indibuild-logo.png" alt="Indibuild company logo" class="logo" />
             <h1 class="company-name">Indibuild</h1>
-            <nav>
+            <nav role="navigation" aria-label="Primary site navigation">
                 <ul class="nav-links">
                     <li><a href="../home.html">Home</a></li>
                     <li><a href="../choice.html">Choices</a></li>
@@ -37,7 +41,7 @@
 
     <h2 class="port-headers">Writer Portfolio</h2>
     <div class="portfolio-box">
-        <main>
+        <main id="main-content">
             <div class="top-row">
                 <div class="left-column">
                     <div class="box-name">Name</div>
@@ -51,7 +55,6 @@
                 <div class="left-column">
                     <div class="box">Testimonials</div>
                     <div class="box-large">Published Work</div>
-                     
                 </div>
                 <div class="right-column">
                     <div class="box">Work Experience</div>
@@ -66,11 +69,9 @@
         </main>
     </div>
 
-    <a href="../download.html" class="download-btn">Download</a>
+    <a href="../download.html" class="download-btn" aria-label="Download my full portfolio as a PDF">Download</a>
 
-
-
-    <footer class="mt-5">
+    <footer class="mt-5" role="contentinfo">
         <p class="text-center">&copy; 2025 Indibuild. All rights reserved.</p>
     </footer>
 
