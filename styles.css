@@ -1,5 +1,5 @@
 :root {
-    font-size: 1.2em;
+    font-size: 1em;
 
     /*Defined fonts*/ 
      --font-mainheader: "Roboto";
@@ -7,7 +7,7 @@
      --font-content: "Roboto";
 
 
-   
+     
 
     /* Defined Colors */
 
@@ -54,6 +54,7 @@
     top: 0;
     padding: 1rem 0;
     width: 100%;
+    z-index: 9;
   }
   
   .header-inner {
@@ -91,7 +92,7 @@
   }
 
   .banner {
-    background-image: url('Salt_Lake_City_skyline_banner.jpg');
+    background-image: url('./assets/images/Salt_Lake_City_skyline_banner.jpg');
     background-size: cover;
     background-position: center;
     color: var(--color-white);
@@ -131,6 +132,51 @@
   .cta-btn:hover {
     background-color: #e0e0e0;
   }
+
+  .table-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .split-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .large{
+    width: 500px;
+    height: 400px;
+  }
+
+  .video-container {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #guides li:hover{
+    background-color: #f4f0f096;
+    border: solid 2px #f4f0f096;
+  }
+
+
+  /* Overwriting Bootstrap Color Scheme
+  .btn-primary, .text-bg-primary {
+    background-color: var(--background-dark-blue) !important;
+    border-color: var(--background-dark-blue) !important;
+  } */
+  
+  /* .text-bg-primary {
+    background-color: var(--background-dark-blue) !important;
+  } */
+  
   
   /* Main Content */
   main .content {
@@ -148,4 +194,66 @@
     text-align: center;
     padding: 1rem 0;
     width: 100%;
+  }
+
+
+  /* Tablet size or less responsive accomodations */
+  @media (max-width: 1500px) {
+    .video-container {
+      flex-wrap: wrap;
+    }
+
+    .table-container,
+    .split-container,
+    .video-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+  /* Iphone responsive accomodations */
+  @media (max-width: 768px) {
+    .header-inner {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  
+    main .content {
+      max-width: 90%;
+    }
+  
+    .banner {
+      padding: 2rem 1rem;
+    }
+  
+    .banner-content {
+      max-width: 90%;
+    }
+  
+    .company-name {
+      margin-bottom: 0.5rem;
+    }
+    
+    .large {
+      width: 60%;
+    }
+  }
+
+
+
+  /*Inline styles*/
+  .highlight-blue{
+    color: #0085f2;
+    background-color: #e5f3fe;
+    border: solid 1px #0085f2;
+    border-radius: 3px;
+    padding: 2px;
   }
