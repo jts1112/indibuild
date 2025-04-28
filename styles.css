@@ -146,6 +146,27 @@
     text-decoration: none;
   }
 
+  .download-btn {
+    background-color: #004466;
+    color: #FFFFFF;
+    border: none;
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: fit-content;  
+    margin: 2rem auto 0 auto;  
+  }
+
+  .download-btn:hover:hover {
+    background-color: #e0e0e0;
+  }
   
   .cta-btn:hover {
     background-color: #e0e0e0;
