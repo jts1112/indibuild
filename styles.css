@@ -122,18 +122,18 @@
     margin: 20px auto;
     width: 60%;
     padding: 20px;
-    background-color: #6c97ab;
+    background-color: #004466;
     border-radius: 10px;
     text-align: center;
     color: #FFFFFF;
-    border: 2px solid #2c5b73;
+    border: 2px solid #004466;
     display: block;
     text-decoration: none;
   }
   .center {
     display: flex;
     justify-content: center;
-    color: #6c97ab;
+    color: #004466;
   }
   .cta-btn {
     background-color: #ffffff;
@@ -171,6 +171,10 @@
   }
   
   .cta-btn:hover {
+    background-color: #e0e0e0;
+  }
+
+  .choices-content:hover {
     background-color: #e0e0e0;
   }
 
