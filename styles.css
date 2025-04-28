@@ -5,8 +5,6 @@
      --font-mainheader: "Roboto";
      --font-header: "Roboto";
      --font-content: "Roboto";
-
-
      
 
     /* Defined Colors */
@@ -20,6 +18,9 @@
     --header-background: var(--background-dark-blue);
     --body-background: #f9f9f9;
     --footer-background: var(--background-dark-blue);
+    --color-main-background: var(--color-white);
+
+    --color-footer-text: var(--color-white);
     
 }
 
@@ -151,6 +152,7 @@
   .large{
     width: 500px;
     height: 400px;
+    border-radius: 10px;
   }
 
   .video-container {
@@ -161,36 +163,24 @@
     align-items: center;
   }
 
-  #guides li:hover{
+  #guides li:hover, #documentation li:hover{
     background-color: #f4f0f096;
     border: solid 2px #f4f0f096;
   }
-
-
-  /* Overwriting Bootstrap Color Scheme
-  .btn-primary, .text-bg-primary {
-    background-color: var(--background-dark-blue) !important;
-    border-color: var(--background-dark-blue) !important;
-  } */
-  
-  /* .text-bg-primary {
-    background-color: var(--background-dark-blue) !important;
-  } */
-  
   
   /* Main Content */
   main .content {
     max-width: 60%;
     margin: 2rem auto;
     padding: 1rem;
-    background-color: white;
+    background-color: var(--color-main-background);
     box-shadow: 0 0 10px #0000001a;
   }
   
   /* Footer */
   footer {
     background-color: #004466;
-    color: white;
+    color: var(--color-footer-text);
     text-align: center;
     padding: 1rem 0;
     width: 100%;
@@ -251,9 +241,15 @@
 
   /*Inline styles*/
   .highlight-blue{
-    color: #0085f2;
-    background-color: #e5f3fe;
+    color: #0465b4;
+    background-color: #1972b763;
     border: solid 1px #0085f2;
     border-radius: 3px;
     padding: 2px;
+  }
+
+  /* Over-riding bootsrap colors. */
+  .btn, .btn-primary, .badge , span.text-bg-primary.rounded-pill {
+    background-color: var(--background-dark-blue) !important;
+    border-color: var(--background-dark-blue) !important;
   }
