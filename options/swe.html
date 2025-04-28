@@ -15,15 +15,37 @@
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
     <title>Software Engineer Portfolio</title>
+
+     
+    <style>
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: 0;
+            padding: .5rem 1rem;
+            background: #000;
+            color: #fff;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
+    
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
         <div class="header-inner">
-            <img src="../assets/images/indibuild-logo.png" alt="Logo" class="logo" />
+            <img src="../assets/images/indibuild-logo.png" alt="Indibuild company logo" class="logo" />
+
             <h1 class="company-name">Indibuild</h1>
-            <nav>
+
+            <nav role="navigation" aria-label="Primary site navigation">
                 <ul class="nav-links">
                     <li><a href="../home.html">Home</a></li>
                     <li><a href="../choice.html">Choices</a></li>
@@ -35,9 +57,10 @@
         </div>
     </header>
 
-    <h2 class = "port-headers">Software Engineer Portfolio</h2>
+    <h2 class="port-headers">Software Engineer Portfolio</h2>
+
     <div class="portfolio-box">
-        <main>
+        <main id="main-content">
             <div class="top-row">
                 <div class="left-column">
                     <div class="box-name">Name</div>
@@ -47,19 +70,20 @@
                     <div class="box">Education</div>
                 </div>
             </div>
+
             <div class="middle-row">
                 <div class="left-column-wide">
                     <div class="box">Side Projects
-                        <div class = "add-on"> 
-                            <div class = "box">GitHub</div>
+                        <div class="add-on">
+                            <div class="box">GitHub</div>
                         </div>
                     </div>
                 </div>
                 <div class="right-column">
-                    <div class = "box">Work Experience</div>
+                    <div class="box">Work Experience</div>
                 </div>
             </div>
-    
+
             <div class="port-footer-items">
                 <div class="bottom-box">Tech Stack</div>
                 <div class="bottom-box-middle">Contact Me</div>
@@ -68,11 +92,12 @@
         </main>
     </div>
 
-    <a href="../download.html" class="download-btn">Download</a>
+    
+    <a href="../download.html" class="download-btn" aria-label="Download my full portfolio as a PDF">
+        Download
+    </a>
 
-
-
-    <footer class="mt-5">
+    <footer class="mt-5" role="contentinfo">
         <p class="text-center">&copy; 2025 Indibuild. All rights reserved.</p>
     </footer>
 
