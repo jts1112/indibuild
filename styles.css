@@ -206,6 +206,33 @@
       height: 100%;
       padding: 1.5rem;
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box-large {
+      border: 1px solid black;
+      text-align: center;
+      width: 100%;
+      height: 250%;
+      padding: 1.5rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box-name {
+      border: 1px solid black;
+      text-align: center;
+      width: 100%;
+      height: 25%;
+      padding: 1.5rem;
+      position: relative;
+      display: flex;              
+      align-items: center;        
+      justify-content: center; 
     }
 
     .bottom-box {
@@ -214,7 +241,9 @@
       padding-left: 0;
       padding-right: 0;
       padding-top: 0.5rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .bottom-box-middle {
@@ -225,7 +254,9 @@
       padding-left: 0;
       padding-right: 0;
       padding-top: 0.5rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .top-row {
@@ -240,6 +271,23 @@
       height: 17rem;
       gap: 20px;
     }
+    .bottom-row {
+      display: flex;
+      height: 5rem;
+      width: 100%;
+      gap: 20px;
+      padding: 0.5rem;
+      padding-top: 0;
+    }
+
+    .box-gall-bottom {
+      width: 100%;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+     
     
     .left-column {
       display: flex;
@@ -261,8 +309,10 @@
     
     .right-column {
       width: 70%;
+      flex-direction: column;
       display: flex;
       align-items: flex-start;
+      gap: 0.5rem;
       padding: 0.5rem;
       padding-left: 0.1rem;
     }
@@ -277,6 +327,42 @@
       background-color: #006699;
       cursor: pointer;
   }
+
+
+  /*Photographer Custom*/ 
+    .left-column-gall {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 100%;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+
+    .box-gallL {
+      border: 1px solid black;
+      border-bottom: none;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 1.5rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*Writer Custom*/
+    
+    .middle-row-writer {
+      display: flex;
+      width: 100%;
+      height: 30rem;
+      gap: 20px;
+    }
+
   
   /* Adaptive portfolio */ 
     @media (max-width: 768px) {
