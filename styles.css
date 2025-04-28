@@ -237,6 +237,7 @@
        display: flex;
        justify-content: center;
        padding: 10px;
+       color:#004466;
     }
     .portfolio-box {
       border: 2px solid black;
